@@ -7,7 +7,7 @@ function shortestPath(graph, startNode, endNode, heuristic) {
     const pq = new PriorityQueue();
 
     for(const nodeId of graph.getAllNodesIds()) {
-        console.log(nodeId);
+        // console.log(nodeId);
         
         distances[nodeId] = Infinity;
         previous[nodeId] = null;

@@ -93,7 +93,21 @@ class GraphBuilder {
     }
 
     isRoad(way) {
-        return this.getTagValue(way, "highway") !== null;
+        const DRIVABLE_HIGHWAYS = new Set([
+            "motorway",
+            "trunk",
+            "primary",
+            "secondary",
+            "tertiary",
+            "residential",
+            "service",
+            "living_street",
+            "unclassified"
+        ]);
+
+        const highway = this.getTagValue(way, "highway");
+
+        return DRIVABLE_HIGHWAYS.has(highway);
     }
 
     ensureNodeExists(graph, osmNode) {
