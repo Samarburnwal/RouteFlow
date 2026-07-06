@@ -1,0 +1,13 @@
+POST http://localhost:3000/route
+Content-Type: application/json
+
+{
+    "start": {
+        "latitude": 23.6303213,
+        "longitude": 85.5215878
+    },
+    "end": {
+        "latitude": 23.632,
+        "longitude": 85.524
+    }
+}

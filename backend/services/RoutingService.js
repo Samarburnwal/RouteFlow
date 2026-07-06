@@ -1,7 +1,7 @@
-const aStar = require('../algorithms/astar/AStar');
-const dijkstra = require('../algorithms/dijkstra/Dijkstra');
-const NearestNodeFinder = require('../routing/NearestNodeFinder');
-const PathConverter = require('../routing/PathConverter');
+const aStar = require('../../algorithms/astar/AStar');
+const dijkstra = require('../../algorithms/dijkstra/Dijkstra');
+const NearestNodeFinder = require('../../routing/NearestNodeFinder');
+const PathConverter = require('../../routing/PathConverter');
 
 class RoutingService {
 

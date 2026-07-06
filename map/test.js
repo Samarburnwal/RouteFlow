@@ -3,7 +3,7 @@ const OSMReader = require("./OSMReader");
 const dijkstra = require("../algorithms/dijkstra/Dijkstra");
 const NearestNodeFinder = require("../routing/NearestNodeFinder");
 const PathConverter = require('../routing/PathConverter');
-const RoutingService = require('../services/RoutingService');
+const RoutingService = require('../backend/services/RoutingService');
 
 const reader = new OSMReader("../data/map.osm");
 
